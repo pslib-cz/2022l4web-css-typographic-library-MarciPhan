@@ -5,44 +5,297 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="../src/classes.js"></script>
-    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="grace.css">
+    <title>Grace.css</title>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__title"><a href="#">Grace<span>.css</span></a></div>
+            <ul class="navbar__menu">
+                <li><a href="#headings" class="navbar__btn">Headings</a></li>
+                <li><a href="#text" class="navbar__btn">Text</a></li>
+                <li><a href="#list" class="navbar__btn">Lists</a></li>
+                <li><a href="#table" class="navbar__btn">Table</a></li>
+                <li><a href="#alerts" class="navbar__btn">Alerts</a></li>
+                <li><a href="#buttons" class="navbar__btn">Buttons</a></li>
+                <li><a href="#buttons" class="navbar__btn">Gallery</a></li>
+                <li><a href="#code" class="navbar__btn">Code</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-    <h1 id="sdf">cs</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum eaque placeat eligendi fugit numquam libero
-        amet nemo ratione doloribus molestias maxime exercitationem, aliquid quos tempore! Minus ipsum inventore
-        recusandae corrupti.</p>
-    <h2>sdas</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque saepe corporis libero, doloribus dolorum enim
-        asperiores quos error repellendus fugit praesentium aliquam quae laudantium non illo assumenda accusamus.
-        Numquam, quos!</p>
-    <h2>sdass</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione animi nam, quae omnis quam voluptatibus,
-        soluta facere facilis rerum suscipit corrupti, ducimus eius quas sint reiciendis nulla laboriosam esse!</p>
-    <h2>sdass</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione animi nam, quae omnis quam voluptatibus,
-        soluta facere facilis rerum suscipit corrupti, ducimus eius quas sint reiciendis nulla laboriosam esse!</p>
-    <h2>sdass</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione animi nam, quae omnis quam voluptatibus,
-        soluta facere facilis rerum suscipit corrupti, ducimus eius quas sint reiciendis nulla laboriosam esse!</p>
-    <h3>hgagafgsd</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione animi nam, quae omnis quam voluptatibus,
-        soluta facere facilis rerum suscipit corrupti, ducimus eius quas sint reiciendis nulla laboriosam esse!</p>
-    <h1>cs</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione animi nam, quae omnis quam voluptatibus,
-        soluta facere facilis rerum suscipit corrupti, ducimus eius quas sint reiciendis nulla laboriosam esse!</p>
+    <main>
+        <section class="first">
+            <h1>This is <span class="typing">sample Grace.css </span></h1>
+        </section>
 
-    <div id="content">
-    </div>
+        <section>
+            <p>Grace.css is a free typography CSS library. It was created for a school project.
+                 Grace.css set standard design for headlines, special text markups, images, lists, basic tables, buttons, alerts and more for design apps, webs and other for church Evangelikální baptisté Jablonec nad Nisou. It's responsible and cross-browser friendly.</p>
+            <a class="button btn-primary"
+                href="https://pslib-cz.github.io/2021l4web-typographic-library-Adam-Safr/download/grace.css">Download
+                full CSS</a>
+        </section>
+        <section id="headings">
+            <h2>Headings <code>&lt;h1&gt; - &lt;h6&gt;</code></h2>
+            <p class="section__info">Search engines use the headings to index the structure and content of your web
+                pages. Users often skim a page by its headings. It is important to use headings to show the document
+                structure. In the code sample below you can see how to implement heading in your code.</p>
+            <div>
+                <div class="box">
+                    <h2 class="text-h1">Heading <span class="heading__info">#h1</span></h2>
+                    <h2>Heading <span class="heading__info">#h2</span></h2>
+                    <h3>Heading <span class="heading__info">#h3</span></h3>
+                    <h4>Heading <span class="heading__info">#h4</span></h4>
+                    <h5>Heading <span class="heading__info">#h5</span></h5>
+                    <h6>Heading <span class="heading__info">#h6</span></h6>
+                </div>
+            </div>
+        </section>
+
+        <section id="text">
+            <h2>Types of text <code>&lt;p&gt; &lt;a&gt; &lt;b&gt; &lt;i&gt; &lt;s&gt; &lt;small&gt;</code></h2>
+            <div class="box">
+
+                <p>Normal paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti
+                    sociosqu ad litora
+                    torquent per conubia nostra, per inceptos hymenaeos. Sed ac dolor sit amet purus malesuada congue.
+                </p>
+                <p>This text is <u>underlined</u> and this text is <b>bold</b>. This text is <s>striked</s> and this
+                    text is <mark>highlited</mark> There is <i>italic text</i> with <small>small words</small>. This <a
+                        href="#">text is clickable</a> and this text is <span class="all-caps">allcaps</span>.</p>
+
+            </div>
+        </section>
+
+        <section id="quotes">
+            <h2>Quotes</h2>
+            <div class="box">
+                <h3>Q tag</h3>
+               <p><q>Two things are infinite: the universe and human stupidity - and I'm not sure about the
+                        universe.</q><span class="q--author">Albert Einstein</span></p>
+                <h3>Blockquote</h3>
+                <figure>
+                    <blockquote>
+                        <p>Your website is the center of your digital eco-system, like a brick and mortar location, the
+                            experience matters once a customer enters, just as much as the perception they have of you
+                            before they walk through the door.</p>
+                        <figcaption><span class="author">Leland Dieno</span> Face The Book With Your Small Business
+                        </figcaption>
+                    </blockquote>
+                </figure>
+                <figure>
+                    <blockquote>
+                        <p>I am another type of church. Religion is more huger then it was.</p>
+                        <figcaption><span class="author">Master Ivo</span> Teacher PSLIB, English lesson L4
+                        </figcaption>
+                    </blockquote>
+                </figure>
+            </div>
+        </section>
+
+        <section id="list">
+            <h2>Lists</h2>
+            <div class="box">
+                <h3>Unordered list</h3>
+                <p>The <code>&lt;ul&gt;</code> tag defines an unordered list. Use the <code>&lt;ul&gt;</code> tag
+                    together with the <code>&lt;li&gt;</code> tag to create unordered lists.</p>
+                <h3>List of WW2 wars</h3>
+                <ul>
+                    <li>French offensive into Germany: September 1939</li>
+                    <li>Operation Weserübung: April–June 1940
+                        <ul>
+                            <li>German Invasion of Denmark</li>
+                            <li>German invasion of Norway</li>
+                        </ul>
+                    </li>
+                    <li>Battle of the Netherlands: May 1940</li>
+                    <li>Battle of Belgium: May 1940</li>
+                    <li>Battle of France: May – June 1940
+                        <ul>
+                            <li>Battle of Boulogne</li>
+                        </ul>
+                    </li>
+                    <li>Battle of Britain: July – October 1940</li>
+                    <li>Operation Overlord: June – August 1944
+                        <ul>
+                            <li>Operation Jupiter</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Ordered list</h3>
+                <p>The <code>&lt;ol&gt;</code> tag defines an ordered list. An ordered list is numerical. The
+                    <code>&lt;li&gt;</code> tag is used to define each list item.</p>
+                <h3>Recipe - Croque Madame with Canadian Bacon</h3>
+                <ol>
+                    <li>Prepare baking sheet with parchment paper or silpat liner, set aside. Preheat broiler.</li>
+                    <li>In medium sized skillet add butter and melt over medium heat.
+                        <ol>
+                            <li>Once butter is melted, whisk in flour until mixture is smooth and there are no clumps.
+                            </li>
+                            <li>Slowly whisk in milk and whisk until smooth and mixture starts to thicken.</li>
+                            <li>Remove from heat and whisk in 1/2 cup swiss cheese, fresh thyme leaves, grated nutmeg,
+                                kosher salt and ground pepper. </li>
+                        </ol>
+                    </li>
+                    <li>Remove from heat and whisk in 1/2 cup swiss cheese, fresh thyme leaves, grated nutmeg, kosher
+                        salt and ground pepper. </li>
+                    <li>Top 2 slices of bread with 4 slices Canadian Bacon and 2 tablespoons shredded swiss cheese.
+                    </li>
+                    <li>Place bread slices on baking sheet. Broil in oven until cheese is melted, browned and bubbly.
+                    </li>
+                    <li>Remove from oven and top with remaining slice of bread, cheese sauce side down.
+                        <ol>
+                            <li>Top each sandwich with equal parts swiss cheese sauce and remaining shredded swiss
+                                cheese. </li>
+                            <li>Place back under broiler and cook until cheese is fully melted and bubbly.</li>
+                        </ol>
+                    </li>
+                    <li>Enjoy food!</li>
+                </ol>
+            </div>
+            </div>
+        </section>
+
+        <section id="table">
+            <h2>Table</h2>
+            <p>A table in HTML consists of table cells inside rows and columns.Each table cell is defined by a
+                <code>&lt;td&gt;</code> and a <code>&lt;/td&gt;</code> tag.Everything between <code>&lt;td&gt;</code>
+                and <code>&lt;/td&gt;</code> are the content of the table cell.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Location</th>
+                        <th>Market Capitalization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Apple Inc.</th>
+                        <th>United States</th>
+                        <th>&#36;2.1T</th>
+                    </tr>
+                    <tr>
+                        <th>Saudi Aramco</th>
+                        <th>Saudi Arabia</th>
+                        <th>&#36;1.9T</th>
+                    </tr>
+                    <tr>
+                        <th>Microsoft Corporation</th>
+                        <th>United States</th>
+                        <th>&#36;1.8T</th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="alerts">
+            <h2>Alerts</h2>
+            <div class="box">
+                <div class="message message--deactive">
+                    <p>This is a succes alert box that will disappear when you click on close button.</p>
+                    <span class="btn-close" onclick="this.parentElement.style.display='none';">x</span>
+                </div>
+                <div class="message message--confirmation">
+                    <span class="btn-close" onclick="this.parentElement.style.display='none';">x</span>
+                    <p>This is a normal alert box that will disappear when you click on close button.</p>
+                </div>
+                <div class="message message--danger">
+                    <span class="btn-close" onclick="this.parentElement.style.display='none';">x</span>
+                    <p>This is a normal alert box that will disappear when you click on close button.</p>
+                </div>
+                <div class="message message--information">
+                    <span class="btn-close" onclick="this.parentElement.style.display='none';">x</span>
+                    <p>This is a normal alert box that will disappear when you click on close button.</p>
+                </div>
+                <div class="message message--warning">
+                    <span class="btn-close" onclick="this.parentElement.style.display='none';">x</span>
+                    <p>This is a normal alert box that will disappear when you click on close button.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="buttons">
+            <h2>Buttons</h2>
+            <p>The <code>&lt;button&gt;</code> tag defines a clickable button.</p>
+            <div class="box">
+                <button class="btn-primary">Button</button>
+                <button class="btn-confirmation">Confirmation button​​</button>
+                <button class="btn-information">Information button​​</button>
+                <button class="btn-danger">Danger button​</button>
+                <button class="btn-deactive">Deactive button</button>
+                <button class="btn-warning">Deactive button</button>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Pictures</h2>
+            <p>The <code>&lt;img&gt;</code> tag is used to embed an image in an HTML page. Images are not technically
+                inserted into a
+                web page; images are linked to web pages. The <img> tag creates a holding space for the referenced
+                image.</p>
+            <h3>Single Image</h3>
+            <figure class="gallery__block">
+                <a href="./img/goat.jpg">
+                    <img src="./img/goat.jpg" alt="Fk jablonec football pilař venca">
+                    <figcaption class="gallery__caption">Football goat</figcaption>
+                </a>
+            </figure>
+        </section>
+
+        <section id="code">
+            <h2>Pre and code blocks</h2>
+            <p>The <code>&lt;pre&gt;</code> tag is used for indicating preformatted text. The <code>&lt;code&gt;</code>
+                tag surrounds the code being marked up.</p>
+            <div class="code-block">
+                <div class="pre-wrapper line">
+                    <pre id="first"><span class="code-tag">h1,</span>
+<span class="code-class">.text-h1</span><span class="code-punctuation"> {</span>
+    <span class="code-text"><span class="code-punctuation">font-weight:</span> 500;
+    <span class="code-punctuation">font-size:</span> 42px;
+    <span class="code-punctuation">margin:</span> 0px 0px 0.7em 0px;</span>
+<span class="code-punctuation">}</span></pre>
+                </div>
+                <div class="pre-wrapper line">
+                    <pre id="third"><span class="code-punctuation">&lt;p </span><span class="code-class">class="text-h1"</span><span class="code-punctuation">&gt;</span> Heading <span class="code-punctuation">&lt;/p&gt;</span>
+</pre>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="box--half">
+        <div>
+            <h2 class="footer__title">Grace.css<span>.css</span><span class="copy">&copy;</span></h2>
+            <p class="footer__name"><a href="https://github.com/Adam-Safr">Adam-Safr 2021</a></p>
+            <p class="footer__email"><a href="mailto:adam.safr@pslib.cz">adam.safr@pslib.cz</a></p>
+            <div class="footer__icons">
+                <a href="https://github.com/pslib-cz/2021l4web-typographic-library-Adam-Safr"><img class="img--logo"
+                        src="./img/github_logo.png" /></a>
+                <a href="https://pslib.cz"><img class="pslib--logo" src="./img/pslib_logo.svg" /></a>
+            </div>
+        </div>
+
+        <div class="box--smal">
+            <h2>About project</h2>
+            <p class="footer__project">Grace.css is a free typography CSS library. It was created for a school project.
+                You don't need to make new CSS file every time you start new project. Grace.css helps you style your headlines, special text markups, images, lists, basic tables, buttons, alerts and more. It's responsible and cros-browser friendly.</p>
+            <div class="footer__icons">
+                <a href="./img/html_logo.png"><img class="img--logo" src="./img/html_logo.png" /></a>
+                <a href="./img/css_logo.png"><img class="img--logo" src="./img/css_logo.png" /></a>
+            </div>
+        </div>
+    </footer>
 </body>
-<script>
-    new content(document.getElementById("content"), [document.getElementsByTagName("h1"), document
-        .getElementsByTagName("h2"), document.getElementsByTagName("h3")
-    ])
-</script>
 
 </html>
