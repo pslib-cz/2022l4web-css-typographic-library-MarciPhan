@@ -1,20 +1,16 @@
 :root {
-    --dark-grey: #eeeeee;
     --bg-color: #ffffff;
     --font-color: #3a3a3a;
     --theme-color: #d60000;
-    --code-yellow: rgb(228, 175, 78);
-    --code-lightgrey: rgb(126, 125, 125);
-    --code-grey: rgb(68, 68, 68);
-    --code-white: #fff;
     --white: #fff;
     --black: #000;
-    --code-blue: #0c3269;
+    --grey: #383535;
     --warning: #f0ad4e;
     --confirmation: #5cb85c;
     --information: #5bc0de;
     --danger: #d9534f;
     --deactive: #605e5e;
+    --light-grey: #eeeeee;
     --light-warning: #f8c57f;
     --light-confirmation: #a2fba2;
     --light-information: #aaeafe;
@@ -249,7 +245,86 @@ section {
         max-width: 1300px;
     }
 }
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color:var(--grey);
+    padding: 2em 40px;
+    margin-top: 80px;
+    font-size: 15px;
+}
 
+footer>div {
+    margin: 2em 0;
+}
+
+footer h2 {
+    color: var(--white);
+    position: relative;
+    display: inline;
+}
+
+footer h2 span {
+    color: var(--theme-color);
+}
+
+footer h2 .copy {
+    font-size: 16px;
+    color: var(--white);
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+
+.footer__name a,
+.footer__email a {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.footer__name a:hover,
+.footer__email a:hover {
+    color: var(--theme-color);
+    transition: 0.3s;
+}
+
+.footer__project {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+footer .name span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer__icons {
+    display: flex;
+    gap: 25px;
+}
+
+.footer__icons a {
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+.footer__icons img {
+    height: 80px;
+}
+
+.footer__icons img.pslib--logo {
+    width: 210px;
+    margin-left: 3em;
+}
 /* Table */
 table {
     border-collapse: collapse;
@@ -279,7 +354,7 @@ code {
     font-family: "Courier 10 Pitch", Courier, monospace;
     font-size: 13px;
     padding: 8px 10px;
-    background-color: var(--dark-grey);
+    background-color: var(--light-grey);
     margin-bottom: 1em;
     line-height: 1.3;
     overflow: auto;
@@ -302,19 +377,6 @@ code {
     }
 }
 
-.line:after {
-    content: "";
-    position: absolute;
-    z-index: 99;
-    top: 0;
-    bottom: 0;
-    left: 20px;
-    border-left: 2px solid var(--theme-color);
-    transform: translate(-50%);
-    margin: 8px 0;
-    border-radius: 20%;
-}
-
 .code-block {
     display: flex;
     flex-wrap: wrap;
@@ -330,9 +392,11 @@ code {
     gap: 12px;
 }
 
-.message span {
+.btn-close::after{
+    content: "X";
     cursor: pointer;
-    text-align: right;
+    position: absolute;
+    right: 9%;
 }
 
 .message.message--deactive {
@@ -394,13 +458,11 @@ button.btn-primary,
 button.btn-primary:hover,
 .button.btn-primary:hover {
     background-color: var(--light-theme-color);
-    color: #fff;
 }
 
 button.btn-deactive,
 .button.btn-deactive {
     background-color: var(--deactive);
-    color: #000;
     cursor: default;
     transition: 0.2s;
 }
@@ -642,4 +704,7 @@ header.sticky .navbar__menu li a:hover {
 }
 
 @media (max-width: 1000px) {
+    .btn-close::after{
+        right: 15%;
+    }
 }
