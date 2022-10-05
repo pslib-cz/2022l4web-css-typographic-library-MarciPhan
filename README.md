@@ -1,6 +1,6 @@
 ## Grace.css - Free typography library
 
-Author: Adam Šáfr
+> Author: Adam Šáfr
 Description
 
 Maestro is a free typography CSS library. It was created for a school project. You don't need to make new CSS file every time you start new project. Maestro helps you style your headlines, special text markups, images, lists, basic tables, buttons, alerts and more. It's responsible and cross-browser friendly.
