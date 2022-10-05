@@ -593,7 +593,7 @@ button.btn-warning:hover,
 }
 
 /* Footer */
-footer *{
+.footer--link{
     color: var(--white);
 
 }

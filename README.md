@@ -1,7 +1,7 @@
 # Typography CSS library
 **Author:** *First Lastname*
 ## Demo site
-Link to **[preview](http://www.github.io/2022l4web-css-typographic-library-MarciPhan/settings)** site for preview.
+Link to **[preview](http://pslib-cz.github.io/2022l4web-css-typographic-library-MarciPhan)** site for preview.
 ## Dependecies
 ...
 ## Implementation
