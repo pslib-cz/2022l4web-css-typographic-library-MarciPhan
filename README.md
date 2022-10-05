@@ -1,4 +1,4 @@
-Maestro.css - Free typography library
+## Grace.css - Free typography library
 
 Author: Adam Šáfr
 Description
