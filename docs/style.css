@@ -1,0 +1,124 @@
+.first{
+    padding-top: 8em;
+}
+/* Header */
+.navbar {
+    max-width: 1300px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    background: var(--bg-color);
+    box-shadow: 0px 1px 5px var(--black);
+    transition: all 0.3s ease;
+}
+
+header.sticky {
+    padding: 12px 0;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar__title a {
+    color: var(--font-color);
+    font-size: 35px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+header .navbar__title a span {
+    color: var(--theme-color);
+    transition: all 0.3s ease;
+}
+
+header.sticky .navbar__title a span {
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+header.sticky .navbar__title a {
+    color: #060606;
+    transition: all 0.3s ease;
+}
+
+header .navbar__menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    color: var(--white);
+}
+
+header .navbar__menu li a {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    color: var(--font-color);
+}
+
+header .navbar__menu li a:hover {
+    color: var(--theme-color);
+}
+
+header.sticky .navbar__menu li a {
+    color: var(--white);
+}
+
+header.sticky .navbar__menu li a:hover {
+    color: var(--font-color);
+}
+
+/* Footer */
+.footer--link{
+    color: var(--white);
+}
+
+.footer--title{
+    color: var(--white);
+}
+footer a:hover{
+    color: var(--light-theme-color);
+
+}
+
+.footer__box--first {
+    overflow: hidden;
+    padding: 30px 20px 0px 20px ;
+    font-size: 15px;
+    background-color: var(--grey);
+}
+.footer__name::before{
+    content:url(images/github-logo.svg);
+}
+.footer__email::before{
+    content:url(images/icon-email.svg);
+}
+
+.footer__box--small{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: var(--black);
+    text-align: center;
+}
+
+.img--logo{
+    width: 32px;
+    height: 32px;
+    filter: var(--white)
+}
+.copy {
+    font-size: 16px;
+    color: var(--white);
+    padding-right: 3px;
+}
