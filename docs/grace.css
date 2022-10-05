@@ -595,9 +595,11 @@ button.btn-warning:hover,
 /* Footer */
 .footer--link{
     color: var(--white);
-
 }
 
+.footer--title{
+    color: var(--white);
+}
 footer a:hover{
     color: var(--light-theme-color);
 
@@ -609,11 +611,30 @@ footer a:hover{
     font-size: 15px;
     background-color: var(--grey);
 }
-
-.footer__box--small{
-    background-color: var(--black);
+.footer__name::before{
+    content:url(images/github-logo.svg);
+}
+.footer__email::before{
+    content:url(images/icon-email.svg);
 }
 
+.footer__box--small{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: var(--black);
+    text-align: center;
+}
+
+.img--logo{
+    width: 32px;
+    height: 32px;
+    filter: var(--white)
+}
+.copy {
+    font-size: 16px;
+    color: var(--white);
+    padding-right: 3px;
+}
 
 @media (min-width: 460px) {
     .navbar {
