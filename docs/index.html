@@ -24,6 +24,10 @@
                 <li><a href="#buttons" class="navbar__btn">Gallery</a></li>
                 <li><a href="#code" class="navbar__btn">Code</a></li>
             </ul>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
         </nav>
     </header>
 
@@ -68,7 +72,7 @@
                 </p>
                 <p>This text is <u>underlined</u> and this text is <b>bold</b>. This text is <s>striked</s> and this
                     text is <mark>highlited</mark> There is <i>italic text</i> with <small>small words</small>. This <a
-                        href="#">text is clickable</a> and this text is <span class="all-caps">allcaps</span>.</p>
+                        href="#">text is clickable</a> and this text is <span class="all-caps">allcaps</span>. <span class="typing">This text using typing.  </span></p>
 
             </div>
         </section>
@@ -234,7 +238,7 @@
                 <button class="btn-information">Information button​​</button>
                 <button class="btn-danger">Danger button​</button>
                 <button class="btn-deactive">Deactive button</button>
-                <button class="btn-warning">Deactive button</button>
+                <button class="btn-warning">Warning button</button>
             </div>
         </section>
 
@@ -258,17 +262,13 @@
             <p>The <code>&lt;pre&gt;</code> tag is used for indicating preformatted text. The <code>&lt;code&gt;</code>
                 tag surrounds the code being marked up.</p>
             <div class="code-block">
-    <pre id="first">
-    <span class="code-tag">h1,</span>
-    <span class="code-class">.text-h1</span><span class="code-punctuation"> {</span>
-    <span class="code-text"><span class="code-punctuation">font-weight:</span> 500;
-    <span class="code-punctuation">font-size:</span> 42px;
-    <span class="code-punctuation">margin:</span> 0px 0px 0.7em 0px;</span>
-    <span class="code-punctuation">}</span></pre>
-                </div>
-                    <pre id="third"><span class="code-punctuation">&lt;p </span><span class="code-class">class="text-h1"</span><span class="code-punctuation">&gt;</span> Heading <span class="code-punctuation">&lt;/p&gt;</span>
-                </pre>
-                </div>
+                <pre id="first">
+            <span>h1,
+            .text-h1 {
+            font-weight: 500;
+            font-size: 42px;
+            margin: 0px 0px 0.7em 0px;
+            }</span></pre>
             </div>
         </section>
 
@@ -277,7 +277,8 @@
     <footer class="footer-grace">
         <div class="footer__box--first">
             <p class="footer__name"><a class="footer--link" href="https://github.com/Adam-Safr">Jakub Marcinka</a></p>
-            <p class="footer__email"><a class="footer--link" href="mailto:adam.safr@pslib.cz">jakubmarc019@pslib.cz</a></p>
+            <p class="footer__email"><a class="footer--link" href="mailto:adam.safr@pslib.cz">jakubmarc019@pslib.cz</a>
+            </p>
             <div class="footer__icons">
             </div>
         </div>
@@ -285,7 +286,8 @@
         <div class="footer__box--small">
             <div class="footer__icons">
                 <a href="https://html.com/"><img class="img--logo" src="images/html-logo.svg" /></a>
-                <a href="https://www.w3.org/Style/CSS/Overview.en.html"><img class="img--logo" src="images/css-logo.svg" /></a>
+                <a href="https://www.w3.org/Style/CSS/Overview.en.html"><img class="img--logo"
+                        src="images/css-logo.svg" /></a>
                 <p class="footer--title"><span class="copy">&copy;</span>Grace<span>.css</span></p>
             </div>
         </div>

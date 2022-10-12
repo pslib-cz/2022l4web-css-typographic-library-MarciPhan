@@ -1,9 +1,9 @@
 # Grace.css - Free typography library
 
-> Author: Adam Šáfr
+> Author: Jakub Marcinka?
 ## Description
 
-*Maestro is a free typography CSS library. It was created for a school project. You don't need to make new CSS file every time you start new project. Maestro helps you style your headlines, special text markups, images, lists, basic tables, buttons, alerts and more. It's responsible and cross-browser friendly.
+*Grace is a free typography CSS library. It was created for a school project. You don't need to make new CSS file every time you start new project. Grace helps you style your headlines, special text markups, images, lists, basic tables, buttons, alerts and more. It's responsible and cross-browser friendly.
 Demo site*
 
 ## Demo site
@@ -29,15 +29,15 @@ Content of the documentation
 
 Implementation
 
-    Download maestro.css in docs/download folder
+    Download Grace.css in docs/download folder
     Add file inside your project folder
-    Link maestro.css file to <head> in every HTML page using syntax:
+    Link Grace.css file to <head> in every HTML page using syntax:
 
-<link href="maestro.css" rel="stylesheet">
+<link href="grace.css" rel="stylesheet">
 
 Colours
 
-Maestro.css has predefined colours. Between lines 3-31 you can find the list of colours. Selector :root defines colours for normal website mode. Selector [data-theme="dark"] defines the colours for website in dark mode. You can change them whatever you want.
+Grace.css has predefined colours. Between lines 3-31 you can find the list of colours. Selector :root defines colours for normal website mode. Selector [data-theme="dark"] defines the colours for website in dark mode. You can change them whatever you want.
 Typography
 
 Website font depends on your system. If you have an Apple device, the text will use Apple system font. Otherwise it will use Segoe UI and Roboto.
@@ -65,7 +65,8 @@ You can use special classes:
 
     class="all-caps" for CAPS text
     class="bold" for bold text
-    class="small" for small text (size is 0.85 of normal text)
+    class="small" for small text (size is 0.6 of normal text)
+    class="typing" for text typing animation
 
 Quotes
 
@@ -142,7 +143,7 @@ A table in HTML consists of table cells inside rows and columns. Each table cell
 
 Alerts
 
-There are 3 types of alert messages. Every message has same HTML structure but has different CSS class.
+There are 5 types of alert messages. Every message has same HTML structure but has different CSS class.
 
 <div class="message message--warning">
     <span class="btn-close" onclick="this.parentElement.style.display='none';">x</span>
@@ -150,8 +151,10 @@ There are 3 types of alert messages. Every message has same HTML structure but h
 </div>
 
     Use class="message--warning" for warning alert.
-    Use class="message--succes" for positive alert.
-    Use class="message--basic" for normal alert.
+    Use class="message--confirmation" for positive alert.
+    Use class="message--danger" for normal alert.
+    Use class="message--deactive" for normal alert.
+    Use class="message--information" for information alert.
 
 Buttons
 
@@ -160,12 +163,15 @@ The <button> tag defines a clickable button. You can also use class="button" for
 <button class="button">Text</button>
 <input class="button" type="submit" value="Text">
 
-There are 4 different classes for buttons:
+There are 6 different classes for buttons:
 
     Use class class="btn-primary" for main button.
-    Use class class="btn-noclick" for unclickable button.
-    Use class class="btn-disabled" for no-effect button.
+    Use class class="btn-deactive" for unclickable button.
+    Use class class="btn-danger" for danger button.
     Use class class="btn-warning" for danger button.
+    Use class class="btn-confirmation" for agree button.
+    Use class class="btn-information" for information button.
+    Use class class="btn-warning" for warning button.
 
 Pictures
 
@@ -180,37 +186,31 @@ The <img> tag is used to embed an image in an HTML page. Use this syntax for sin
 
 Use this syntax for photo gallery. You can add as many <figure> into <div class="gallery"> as you want:
 
-<div class="gallery">
-    <figure class="gallery__block">
-        <a href="./img/file.jpg">
-            <img src="./img/file.jpg" alt="alternative text">
-            <figcaption class="gallery__caption">Caption</figcaption>
-        </a>
-    </figure>
-    <figure class="gallery__block">
-        <a href="./img/file.jpg">
-            <img src="./img/file.jpg" alt="alternative text">
-            <figcaption class="gallery__caption">Caption</figcaption>
-        </a>
-    </figure>
-</div>
+<figure class="gallery__block">
+    <a href="./img/file.jpg">
+        <img src="./img/file.jpg" alt="alternative text">
+        <figcaption class="gallery__caption">Caption</figcaption>
+    </a>
+</figure>
+<figure class="gallery__block">
+    <a href="./img/file.jpg">
+        <img src="./img/file.jpg" alt="alternative text">
+        <figcaption class="gallery__caption">Caption<figcaption>
+    </a>
+</figure>
+
 
 Code blocks
 
 The <pre> tag is used for indicating preformatted text. The <code> tag surrounds the code being marked up. Syntax:
 
 <div class="code-block">
-    <div class="pre-wrapper line">
-        <pre><span class="code-tag">h1,</span>
-        <span class="code-class">.text-h1</span><span class="code-punctuation"> {</span>
-        <span class="code-text"><span class="code-punctuation">font-weight:</span> 500;
-        <span class="code-punctuation">font-size:</span> 42px;
-        <span class="code-punctuation">margin:</span> 0px 0px 0.7em 0px;</span>
-        <span class="code-punctuation">}</span></pre>
-    </div>
-    <div class="pre-wrapper line">
-        <pre><span class="code-punctuation">&lt;p </span><span class="code-class">class="text-h1"</span><span class="code-punctuation">&gt;</span> Heading <span class="code-punctuation">&lt;/p&gt;</span></pre>
-    </div>
+    <pre><span>h1,
+    .text-h1 {
+    font-weight: 500;
+    font-size: 42px;
+    margin: 0px 0px 0.7em 0px;
+    }</span></pre>
 </div>
 
 There are classes for highliting the code parts. Use them on <span> inside <pre> tag:
