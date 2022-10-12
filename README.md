@@ -1,6 +1,6 @@
 # Grace.css - Free typography library
 
-> Author: Jakub Marcinka?
+> Author: Jakub Marcinka
 ## Description
 
 *Grace is a free typography CSS library. It was created for a school project. You don't need to make new CSS file every time you start new project. Grace helps you style your headlines, special text markups, images, lists, basic tables, buttons, alerts and more. It's responsible and cross-browser friendly.
@@ -37,7 +37,8 @@ Implementation
 
 Colours
 
-Grace.css has predefined colours. Between lines 3-31 you can find the list of colours. Selector :root defines colours for normal website mode. Selector [data-theme="dark"] defines the colours for website in dark mode. You can change them whatever you want.
+Grace.css has predefined colours. Between lines 3-21 you can find the list of colours. Selector :root defines colours for normal website mode. 
+
 Typography
 
 Website font depends on your system. If you have an Apple device, the text will use Apple system font. Otherwise it will use Segoe UI and Roboto.
@@ -45,12 +46,12 @@ Headings
 
 You can use headings from <h1> to <h6>. Font sizes are:
 
-    30px for <h1>
-    23px for <h2>
+    36px for <h1>
+    25px for <h2>
     20px for <h3>
-    19px for <h4>
-    18px for <h5>
-    17px for <h5>
+    18px for <h4>
+    16px for <h5>
+    14px for <h5>
 
 Types of text
 
@@ -177,28 +178,12 @@ Pictures
 
 The <img> tag is used to embed an image in an HTML page. Use this syntax for single image:
 
-<figure class="gallery__block">
+<figure class="image__block">
     <a href="./img/file.jpg">
         <img src="./img/file.jpg" alt="alternative text">
-        <figcaption class="gallery__caption">Caption</figcaption>
+        <figcaption class="image__caption">Caption</figcaption>
     </a>
 </figure>
-
-Use this syntax for photo gallery. You can add as many <figure> into <div class="gallery"> as you want:
-
-<figure class="gallery__block">
-    <a href="./img/file.jpg">
-        <img src="./img/file.jpg" alt="alternative text">
-        <figcaption class="gallery__caption">Caption</figcaption>
-    </a>
-</figure>
-<figure class="gallery__block">
-    <a href="./img/file.jpg">
-        <img src="./img/file.jpg" alt="alternative text">
-        <figcaption class="gallery__caption">Caption<figcaption>
-    </a>
-</figure>
-
 
 Code blocks
 
@@ -213,17 +198,10 @@ The <pre> tag is used for indicating preformatted text. The <code> tag surrounds
     }</span></pre>
 </div>
 
-There are classes for highliting the code parts. Use them on <span> inside <pre> tag:
-
-    Use class class="code-tag" for code tags.
-    Use class class="code-class" for classes.
-    Use class class="code-text" for normal texts.
-    Use class class="code-punctuation" for code punctuations.
-
 Sections
 
 Inside <body> create <main> tag where you put sections <section>. Every <section> should have <h>tag inside. Then do whatever you want.
 The end
 
 I hope this CSS file will help you
-Have a nice day 👍 🎉
+Have a good day
