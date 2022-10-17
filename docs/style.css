@@ -23,30 +23,31 @@ header.sticky {
     padding: 12px 0;
 }
 
-header .navbar {
+header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header .navbar__title a {
+header .title a {
     color: var(--font-color);
     font-size: 35px;
     font-weight: 600;
     transition: all 0.3s ease;
+    padding-left: 10px;
 }
 
-header .navbar__title a span {
+header .title a span {
     color: var(--theme-color);
     transition: all 0.3s ease;
 }
 
-header.sticky .navbar__title a span {
+header.sticky .title a span {
     color: var(--white);
     transition: all 0.3s ease;
 }
 
-header.sticky .navbar__title a {
+header.sticky .title a {
     color: #060606;
     transition: all 0.3s ease;
 }
@@ -104,7 +105,7 @@ footer a:hover{
     content:url(images/github-logo.svg);
 }
 .footer__email::before{
-    content:url(images/icon-email.svg);
+    content:url(s/icon-email.svg);
 }
 
 .footer__box--small{
@@ -126,118 +127,108 @@ footer a:hover{
 }
 
 /* Hamburger menu */
-.navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
+label input {
+  display: none; 
 }
 
-.navbar__menu {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar__menu > li {
-  margin: 0 1rem;
-  overflow: hidden;
-}
-
-.menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: #000;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
-
-.menu-button::before {
-  content: '';
-  margin-top: -8px;
-}
-
-.menu-button::after {
-  content: '';
-  margin-top: 8px;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
-
-@media (max-width: 700px) {
-  .menu-button-container {
-    display: flex;
-  }
-  .navbar__menu {
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    left: 0;
+@media only screen and (max-width: 800px){
+  header .navbar__menu   {
     flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu-toggle ~ .navbar__menu li {
-    height: 0 r;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    border: 1px solid rgb(81, 81, 81);
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .navbar__menu > li {
     display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    background-color: #f9f9f9;
   }
-  .navbar__menu > li {
-    border-bottom: 1px solid rgb(188, 185, 185);
+  label .menu {
+      position: absolute;
+      padding: 0px 40px 0px 50px;
+      z-index: 1;
+      width: 100%;
+      height: 5%;
+      display: block;
+      background: #FFF;
+      -webkit-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+      cursor: pointer;
+      
   }
-  .navbar__menu > li:nth-child(1) {
-    border-top: 1px solid rgb(188, 185, 185);
-    margin-top: 1em;
+  
+  label .hamburger {
+      position: relative;
+      top: -20px;
+      left: 75%;
+      width: 30px;
+      height: 2px;
+      display: block;
+      background: var(--black);
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      -webkit-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+  }
+  
+  label .hamburger:after, label .hamburger:before {
+      -webkit-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: var(--black);
+  }
+  
+  label .hamburger:before { 
+      top: -10px;
+  }
+  
+  label .hamburger:after { 
+      bottom: -10px; 
+  }
+  
+  label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+  border-radius: 0;
+
+  }
+
+  label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  }
+
+  label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+
+  }
+
+  label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+
+  }
+
+  label input:checked + .menu + nav { 
+      top: 250px; 
+  }
+
+  label nav {
+  z-index: 200;
+  position: absolute;
+  top: -1000px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+  }
+  header{
+    display: inline;
+  }
+  .navbar__menu li a{
+    font-size: x-large;
+    padding-top: 20px;
   }
 }
