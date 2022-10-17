@@ -3,8 +3,7 @@
 > Author: Jakub Marcinka
 ## Description
 
-*Grace is a free typography CSS library. It was created for a school project. You don't need to make new CSS file every time you start new project. Grace helps you style your headlines, special text markups, images, lists, basic tables, buttons, alerts and more. It's responsible and cross-browser friendly.
-Demo site*
+*Grace.css is a free typography CSS library. It was created for a school project.Grace.css set standard design for headlines, special text markups, images, lists, basic tables, buttons, alerts and more for design apps, webs and other for church [Evangelikální baptisté Jablonec nad Nisou](https://baptistejablonec.cz/). It's responsible and cross-browser friendly.*
 
 ## Demo site
 Link to **[preview](http://pslib-cz.github.io/2022l4web-css-typographic-library-MarciPhan)** site for preview.
